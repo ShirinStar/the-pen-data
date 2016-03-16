@@ -18,6 +18,10 @@ The dataset contains the following fields:
 * refers_to_object_id - the Cooper Hewitt collection object ID.
 * created - a UNIX timestamp.
 
+### refers_to_object_id
+
+Each row in this datset has a `refers_to_object_id` field which is a reference to an object in the [Cooper Hewitt collection dataset](http://github.com/cooperhewitt/collection). For rows where the `tool_id != 0` the `refers_to_object_id` field has been set to 0 as these rows refer to "creations" made on our interactive tables and do not refer to a specific object in the collection.
+
 ### Bundle IDs
 
 The data makes reference to something called a “bundle_id” which one can think of as a “visit” to our museum by an individual visitor. Each bundle represents the collection of objects collected with a Pen or a design created on our digital tables by a single visitor during the course of their visit.
